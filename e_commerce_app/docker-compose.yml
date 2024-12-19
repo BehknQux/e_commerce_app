@@ -1,0 +1,18 @@
+#version: '3.8'
+services:
+  ai-password-service:
+    image: emirakts/ai-password-service:latest
+    container_name: ai-password-service
+    ports:
+      - "8080:8080"
+    environment:
+      JWT_SECRET_KEY: "EWTyUoP45NqAS5NqASd1erR34qwyUod1erR34qweAS5NqASd1erR34qwE8yQ3zsT"
+      JWT_EXPIRATION_TIME: "100000"
+      MAIL_HOST: "smtp.gmail.com"
+      MAIL_PORT: "587"
+      MAIL_USERNAME: "wodevi0@gmail.com"
+      MAIL_PASSWORD: "inte fiep rvxd cnlf"
+      DATASOURCE_URL: "jdbc:postgresql://host.docker.internal:5432/e_commerce_app"
+      DATASOURCE_USERNAME: "postgres"
+      DATASOURCE_PASSWORD: "hamzali"
+      OPENAI_API_KEY: "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"
